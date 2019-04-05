@@ -226,6 +226,11 @@ public class RBT<T> implements Iterable<T> {
     private int verify(Node n) {
         assert n != null;
         assert !n.red;
+
+        assert !nil.red;
+        assert nil.left == null;
+        assert nil.right == null;
+
         if (n == nil) {
             return 1;
         }
