@@ -13,13 +13,15 @@ public class RBTTest {
     private Object[] renderDouble(int maxSize, int minSize) {
         int size = random.nextInt(maxSize - minSize) + minSize;
         double[] data = new double[size];
-        RBT<Double> rbt = new RBT<>(Comparator.comparingDouble(x -> x));
         for (int i = 0; i < size; i++) {
-            System.out.println("insert: " + i);
             data[i] = random.nextDouble();
-            rbt.insert(data[i]);
         }
         Arrays.sort(data);
+
+        RBT<Double> rbt = new RBT<>(Comparator.comparingDouble(x -> x));
+        for (int i = 0; i < size; i++) {
+            rbt.insert(data[i]);
+        }
         return new Object[]{rbt, data};
     }
 
@@ -62,7 +64,56 @@ public class RBTTest {
 
     @Test
     public void test2() {
-        final int testCnt = 10240;
+        final int testCnt = 1024;
+        final int maxSize = 1024;
+        final int minSize = 10;
+        for (int i = 0; i < testCnt; i++) {
+            ArrayList<Integer> delInd = new ArrayList<>();
+            double[] data = null;
+            try {
+                Object[] testData = renderDouble(maxSize, minSize);
+                @SuppressWarnings("unchecked")
+                RBT<Double> rbt = (RBT<Double>) testData[0];
+                data = (double[]) testData[1];
+                boolean[] del = new boolean[data.length];
+                Iterator<Double> it = rbt.iterator();
+                int ind = 0;
+
+                while (it.hasNext()) {
+                    it.next();
+                    if (random.nextBoolean()) {
+                        delInd.add(ind);
+                        del[ind] = true;
+                        it.remove();
+                    }
+                    ind++;
+                }
+
+                it = rbt.iterator();
+                ind = 0;
+                while (it.hasNext()) {
+                    while (ind < del.length && del[ind]) {
+                        ind++;
+                    }
+                    assert ind < del.length : ind + ", " + data.length;
+                    double next = it.next();
+                    assert next == data[ind] : next + ", " + data[ind];
+                    ind++;
+                }
+            } catch (Throwable throwable) {
+                System.out.println("delIndex: ");
+                System.out.println(delInd);
+                System.out.println("data: ");
+                System.out.println(Arrays.toString(data));
+                System.out.flush();
+                throw throwable;
+            }
+        }
+    }
+
+    @Test
+    public void test3() {
+        final int testCnt = 1024;
         final int maxSize = 1024;
         final int minSize = 10;
         for (int i = 0; i < testCnt; i++) {
