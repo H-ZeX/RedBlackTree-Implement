@@ -42,7 +42,142 @@ public class RBT<T> implements Iterable<T> {
                 }
             }
         }
+        // TODO, just for test
         verify(root);
+    }
+
+    private void remove(Node z) {
+        assert z != nil;
+        Node x;
+        boolean yoc;
+        if (z.right == nil) {
+            transplant(z, z.left);
+            x = z.left;
+            yoc = z.red;
+        } else {
+            Node sr = successor(z);
+            assert sr != nil;
+            x = sr.right;
+            yoc = sr.red;
+            if (sr.parent != z) {
+                transplant(sr, x);
+                sr.right = z.right;
+                assert z.right != nil;
+                z.right.parent = sr;
+            } else {
+                x.parent = sr;
+            }
+            sr.left = z.left;
+            if (z.left != nil) {
+                z.left.parent = sr;
+            }
+            sr.red = z.red;
+            transplant(z, sr);
+        }
+        if (!yoc) {
+            fixAfterRemove(x);
+        }
+        // TODO, just for test
+        verify(root);
+    }
+
+    private void fixAfterRemove(Node x) {
+        while (x != root && !x.red) {
+            if (x == x.parent.left) {
+                Node w = x.parent.right;
+                // x has double black,
+                // so its brother should not be nil,
+                // even if x is nil
+                assert w != nil;
+                if (w.red) {
+                    assert !x.parent.red;
+                    x.parent.red = true;
+                    w.red = false;
+                    leftRotate(x.parent);
+
+                    // assert x == x.parent.left;
+                    // assert !x.parent.right.red;
+                } else {
+                    if (!w.left.red && !w.right.red) {
+                        w.red = true;
+                        x = x.parent;
+                    } else if (w.left.red && !w.right.red) {
+                        w.red = true;
+                        w.left.red = false;
+                        rightRotate(w);
+
+                        // assert x == x.parent.left;
+                        // assert !w.red;
+                        // assert w.right.red;
+                    } else {
+                        w.red = x.parent.red;
+                        w.right.red = false;
+                        x.parent.red = false;
+                        leftRotate(x.parent);
+                        x = root;
+                    }
+                }
+            } else {
+                Node w = x.parent.left;
+                assert w != nil;
+                if (w.red) {
+                    assert !x.parent.red;
+                    x.parent.red = true;
+                    w.red = false;
+                    rightRotate(x.parent);
+
+                    // assert x != x.parent.left;
+                    // assert x == x.parent.right;
+                    // assert !w.red;
+
+                } else {
+                    if (!w.left.red && !w.right.red) {
+                        w.red = true;
+                        x = x.parent;
+                    } else if (!w.left.red && w.right.red) {
+                        w.red = true;
+                        w.right.red = false;
+                        leftRotate(w);
+
+                        // assert x != x.parent.left;
+                        // assert x == x.parent.right;
+                        // assert !w.red;
+                        // assert w.right.red;
+
+                    } else {
+                        w.red = x.parent.red;
+                        w.left.red = false;
+                        x.parent.red = false;
+                        rightRotate(x.parent);
+                        x = root;
+                    }
+                }
+            }
+        }
+        x.red = false;
+    }
+
+    /**
+     * @return nil if no successor
+     */
+    private Node successor(Node node) {
+        assert node != null;
+        assert node != nil;
+        assert node.right != null;
+        if (node.right == nil) {
+            Node p = node.parent;
+            while (p != nil && p.right == node) {
+                p = p.parent;
+                node = node.parent;
+            }
+            return p;
+        } else {
+            Node n = node.right;
+            while (n.left != nil) {
+                n = n.left;
+            }
+            return n;
+        }
     }
 
     // TODO, just for test
@@ -137,7 +272,7 @@ public class RBT<T> implements Iterable<T> {
         } else {
             rh = verify(n.right);
         }
-        assert lh == rh;
+        assert lh == rh : lh + " " + rh;
         return lh + 1;
     }
 
@@ -158,7 +293,6 @@ public class RBT<T> implements Iterable<T> {
         // so should NOT use transplant here
         nl.right = n;
         n.parent = nl;
-
     }
 
     private void leftRotate(Node n) {
@@ -178,22 +312,21 @@ public class RBT<T> implements Iterable<T> {
         n.parent = nr;
     }
 
-    private void transplant(Node x, Node y) {
-        assert x != null;
-        assert y != null;
-        assert x != nil;
-        assert y != nil;
+    private void transplant(Node n1, Node n2) {
+        assert n1 != null;
+        assert n2 != null;
+        assert n1 != nil;
 
-        if (x.parent == nil) {
-            root = y;
+        if (n1.parent == nil) {
+            root = n2;
         } else {
-            if (x.parent.left == x) {
-                x.parent.left = y;
+            if (n1.parent.left == n1) {
+                n1.parent.left = n2;
             } else {
-                x.parent.right = y;
+                n1.parent.right = n2;
             }
         }
-        y.parent = x.parent;
+        n2.parent = n1.parent;
     }
 
     @Override
@@ -279,7 +412,7 @@ public class RBT<T> implements Iterable<T> {
 
         @Override
         public void remove() {
-            throw new UnsupportedOperationException();
+            RBT.this.remove(cur);
         }
     }
 

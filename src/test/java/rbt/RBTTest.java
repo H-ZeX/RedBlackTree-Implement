@@ -2,9 +2,7 @@ package rbt;
 
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Random;
+import java.util.*;
 
 public class RBTTest {
     private Random random = new Random();
@@ -31,10 +29,8 @@ public class RBTTest {
         for (int i = 0; i < size; i++) {
             data[i] = random.nextInt();
         }
-        // System.out.println(Arrays.toString(data));
-        // System.out.flush();
-
         Arrays.sort(data);
+
         RBT<Integer> rbt = new RBT<>(Comparator.comparingInt(x -> x));
         for (int i = 0; i < size; i++) {
             rbt.insert(data[i]);
@@ -45,7 +41,7 @@ public class RBTTest {
     @Test
     public void test1() {
         final int testCnt = 1024;
-        final int maxSize = 10240;
+        final int maxSize = 1024;
         final int minSize = 10;
         for (int i = 0; i < testCnt; i++) {
             Object[] testData = renderInt(maxSize, minSize);
@@ -61,6 +57,54 @@ public class RBTTest {
                 ind++;
             }
             System.out.println("success: " + i + ", high: " + rbt.blackHigh());
+        }
+    }
+
+    @Test
+    public void test2() {
+        final int testCnt = 10240;
+        final int maxSize = 1024;
+        final int minSize = 10;
+        for (int i = 0; i < testCnt; i++) {
+            ArrayList<Integer> delInd = new ArrayList<>();
+            int[] data = null;
+            try {
+                Object[] testData = renderInt(maxSize, minSize);
+                @SuppressWarnings("unchecked")
+                RBT<Integer> rbt = (RBT<Integer>) testData[0];
+                data = (int[]) testData[1];
+                boolean[] del = new boolean[data.length];
+                Iterator<Integer> it = rbt.iterator();
+                int ind = 0;
+
+                while (it.hasNext()) {
+                    it.next();
+                    if (random.nextBoolean()) {
+                        delInd.add(ind);
+                        del[ind] = true;
+                        it.remove();
+                    }
+                    ind++;
+                }
+
+                it = rbt.iterator();
+                ind = 0;
+                while (it.hasNext()) {
+                    while (ind < del.length && del[ind]) {
+                        ind++;
+                    }
+                    assert ind < del.length : ind + ", " + data.length;
+                    int next = it.next();
+                    assert next == data[ind] : next + ", " + data[ind];
+                    ind++;
+                }
+            } catch (Throwable throwable) {
+                System.out.println("delIndex: ");
+                System.out.println(delInd);
+                System.out.println("data: ");
+                System.out.println(Arrays.toString(data));
+                throw throwable;
+            }
         }
     }
 }
