@@ -1,14 +1,14 @@
 package rbt;
 
-import java.util.*;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.NoSuchElementException;
 
 public class RBT<T> implements Iterable<T> {
     private final Node nil = new Node(null, false);
     private final Comparator<? super T> cmp;
     private Node root = nil;
-
-    // TODO, just for test
-    private Random random = new Random();
 
     public RBT(Comparator<? super T> cmp) {
         this.cmp = cmp;
@@ -94,9 +94,6 @@ public class RBT<T> implements Iterable<T> {
                     x.parent.red = true;
                     w.red = false;
                     leftRotate(x.parent);
-
-                    // assert x == x.parent.left;
-                    // assert !x.parent.right.red;
                 } else {
                     if (!w.left.red && !w.right.red) {
                         w.red = true;
@@ -105,10 +102,6 @@ public class RBT<T> implements Iterable<T> {
                         w.red = true;
                         w.left.red = false;
                         rightRotate(w);
-
-                        // assert x == x.parent.left;
-                        // assert !w.red;
-                        // assert w.right.red;
                     } else {
                         w.red = x.parent.red;
                         w.right.red = false;
@@ -125,11 +118,6 @@ public class RBT<T> implements Iterable<T> {
                     x.parent.red = true;
                     w.red = false;
                     rightRotate(x.parent);
-
-                    // assert x != x.parent.left;
-                    // assert x == x.parent.right;
-                    // assert !w.red;
-
                 } else {
                     if (!w.left.red && !w.right.red) {
                         w.red = true;
@@ -138,12 +126,6 @@ public class RBT<T> implements Iterable<T> {
                         w.red = true;
                         w.right.red = false;
                         leftRotate(w);
-
-                        // assert x != x.parent.left;
-                        // assert x == x.parent.right;
-                        // assert !w.red;
-                        // assert w.right.red;
-
                     } else {
                         w.red = x.parent.red;
                         w.left.red = false;
@@ -189,14 +171,6 @@ public class RBT<T> implements Iterable<T> {
         assert n != null;
         assert n != nil;
         assert n != root;
-
-        // Node s = n.parent;
-        // if (random.nextBoolean() && s != nil && s.left != nil) {
-        //     rightRotate(s);
-        // }
-        // if (random.nextBoolean() && s != nil && s.right != nil) {
-        //     leftRotate(s);
-        // }
 
         while (n.parent.red) {
             // For that n.parent is red,
