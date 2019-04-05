@@ -12,7 +12,7 @@ public class RBTTest {
     /**
      * @return [dataArray, rbt]
      */
-    private Object[] render(int maxSize, int minSize) {
+    private Object[] renderDouble(int maxSize, int minSize) {
         int size = random.nextInt(maxSize - minSize) + minSize;
         double[] data = new double[size];
         RBT<Double> rbt = new RBT<>(Comparator.comparingDouble(x -> x));
@@ -25,22 +25,42 @@ public class RBTTest {
         return new Object[]{rbt, data};
     }
 
+    private Object[] renderInt(int maxSize, int minSize) {
+        int size = random.nextInt(maxSize - minSize) + minSize;
+        int[] data = new int[size];
+        for (int i = 0; i < size; i++) {
+            data[i] = random.nextInt();
+        }
+        // System.out.println(Arrays.toString(data));
+        // System.out.flush();
+
+        Arrays.sort(data);
+        RBT<Integer> rbt = new RBT<>(Comparator.comparingInt(x -> x));
+        for (int i = 0; i < size; i++) {
+            rbt.insert(data[i]);
+        }
+        return new Object[]{rbt, data};
+    }
+
     @Test
     public void test1() {
         final int testCnt = 1024;
-        final int maxSize = 1024;
+        final int maxSize = 10240;
         final int minSize = 10;
         for (int i = 0; i < testCnt; i++) {
-            Object[] testData = render(maxSize, minSize);
+            Object[] testData = renderInt(maxSize, minSize);
             @SuppressWarnings("unchecked")
-            RBT<Double> rbt = (RBT<Double>) testData[0];
-            double[] data = (double[]) testData[1];
+            RBT<Integer> rbt = (RBT<Integer>) testData[0];
+            // rbt.layout();
+            // System.exit(0);
+
+            int[] data = (int[]) testData[1];
             int ind = 0;
-            for (double x : rbt) {
-                assert x == data[ind] : Arrays.toString(data) + "";
+            for (int x : rbt) {
+                assert x == data[ind] : x + "\t" + data[ind] + "\n" + Arrays.toString(data) + "";
                 ind++;
             }
-            System.out.println("success: " + i);
+            System.out.println("success: " + i + ", high: " + rbt.blackHigh());
         }
     }
 }

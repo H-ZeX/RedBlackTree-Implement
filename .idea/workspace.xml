@@ -1,43 +1,469 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$USER_HOME$/MyStudy/Groovy/code" value="PREVIEW" />
-        <entry key="$USER_HOME$/MyStudy/Java/Gradle/Test_2" value="PREVIEW" />
-        <entry key="$USER_HOME$/MyStudy/Java/Spring/SpringInActionExamples/Chapter_05/Spittr" value="PREVIEW" />
-        <entry key="$USER_HOME$/data/JavaWork/MyLib" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../SpringInActionExamples/Chapter_01/knight" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../SpringInActionExamples/Chapter_03/conditional" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../SpringInActionExamples/Chapter_03/externals" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../SpringInActionExamples/Chapter_05/Spittr" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../SpringInActionExamples/Chapter_06/jsp" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../SpringInActionExamples/Chapter_06/tiles" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../SpringInActionExamples/Chapter_07/Spittr" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../apache-tomcat-9.0.14-src/java" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../jdk8" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../parallelBatchGCD" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../redis-in-action-master/java" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../springWeb" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../untitled4_1" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../v2rayNG-master/V2rayNG" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../MISC/Learn_1" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../MISC/src" value="PREVIEW" />
-        <entry key="/tmp/JDBCTutorial" value="PREVIEW" />
-        <entry key="/tmp/ss" value="PREVIEW" />
-      </map>
+  <component name="ChangeListManager">
+    <list default="true" id="b80c3764-0d83-4901-b787-93dae53af10e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rbt/RBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rbt/RBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rbt/RBTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rbt/RBTTest.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="/media/hzx/data/Program/IdeaProjects/MyRBT/.gradle/" />
+    <ignored path="/media/hzx/data/Program/IdeaProjects/MyRBT/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file:///media/hzx/data/Program/IdeaProjects/MyRBT/src/main/java/rbt/RBT.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
+              <folding>
+                <element signature="e#1332#1333#0" expanded="true" />
+                <element signature="e#1362#1363#0" expanded="true" />
+                <element signature="e#5397#5398#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///tmp/output">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///media/hzx/data/Program/IdeaProjects/MyRBT/src/test/java/rbt/RBTTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#968#998#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="/media/hzx/data/Program/IdeaProjects/MyRBT/src/main/java/rbt/RBT.java" />
+        <option value="/media/hzx/data/Program/IdeaProjects/MyRBT/src/test/java/rbt/RBTTest.java" />
+      </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="960" />
     <option name="height" value="1080" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MyRBT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyRBT" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyRBT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyRBT" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyRBT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyRBT" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyRBT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyRBT" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyRBT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyRBT" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rbt" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.startup.StartupConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.RBTTest.test1">
+    <configuration name="RBTTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;rbt.RBTTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RBTTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <output_file path="/tmp/output" is_save="true" />
+      <module name="MyRBT.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rbt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rbt" />
+      <option name="MAIN_CLASS_NAME" value="rbt.RBTTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.RBTTest" />
+      <item itemvalue="JUnit.RBTTest.test1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RBTTest.test1" />
+        <item itemvalue="Gradle.RBTTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b80c3764-0d83-4901-b787-93dae53af10e" name="Default Changelist" comment="" />
+      <created>1554423537424</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554423537424</updated>
+      <workItem from="1554423541158" duration="14751000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="RBTTest_test1 - 2019.04.05 at 11h 13m 41s.xml">
+      <configuration name="RBTTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_test1 - 2019.04.05 at 11h 59m 01s.xml">
+      <configuration name="RBTTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_test1 - 2019.04.05 at 12h 01m 05s.xml">
+      <configuration name="RBTTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_test1 - 2019.04.05 at 12h 01m 32s.xml">
+      <configuration name="RBTTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_test1 - 2019.04.05 at 12h 02m 23s.xml">
+      <configuration name="RBTTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_test1 - 2019.04.05 at 12h 03m 04s.xml">
+      <configuration name="RBTTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_test1 - 2019.04.05 at 12h 05m 10s.xml">
+      <configuration name="RBTTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_test1 - 2019.04.05 at 12h 05m 20s.xml">
+      <configuration name="RBTTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_test1 - 2019.04.05 at 12h 05m 27s.xml">
+      <configuration name="RBTTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_test1 - 2019.04.05 at 12h 08m 20s.xml">
+      <configuration name="RBTTest.test1" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14751000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2497332" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" />
+      <window_info anchor="bottom" id="Build" weight="0.32948583" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Tail" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.49421662" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar:///media/hzx/infrastructure/BIN/jdk1.8.0_191/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="800" column="25" selection-start-line="800" selection-start-column="25" selection-end-line="800" selection-end-column="25" />
+          <folding>
+            <element signature="e#23699#23700#0" expanded="true" />
+            <element signature="e#23735#23736#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///media/hzx/infrastructure/BIN/jdk1.8.0_191/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="530" selection-start-line="530" selection-end-line="530" />
+          <folding>
+            <element signature="docComment;class#Random#0" />
+            <element signature="e#2428#2489#0" />
+            <element signature="e#2558#2751#0" />
+            <element signature="e#3265#3483#0" />
+            <element signature="e#3569#3963#0" />
+            <element signature="e#3616#3673#0" />
+            <element signature="e#3752#3957#1" />
+            <element signature="e#4066#4539#0" />
+            <element signature="e#4066#4826#0" />
+            <element signature="e#4687#4820#1" />
+            <element signature="e#4935#5856#0" />
+            <element signature="e#4935#5996#0" />
+            <element signature="e#6002#7211#0" />
+            <element signature="e#6002#7537#0" />
+            <element signature="e#7327#7435#1" />
+            <element signature="e#7543#8250#0" />
+            <element signature="e#7543#8544#0" />
+            <element signature="e#8550#8906#0" />
+            <element signature="e#8550#9686#0" />
+            <element signature="e#9023#9662#1" />
+            <element signature="e#9188#9486#1" />
+            <element signature="e#9504#9652#1" />
+            <element signature="e#9692#10136#0" />
+            <element signature="e#9692#10636#0" />
+            <element signature="e#10220#10575#1" />
+            <element signature="e#10281#10340#1" />
+            <element signature="e#10358#10565#1" />
+            <element signature="e#10437#10491#1" />
+            <element signature="e#10589#10630#1" />
+            <element signature="e#10642#10896#0" />
+            <element signature="e#10642#11240#0" />
+            <element signature="e#11025#11216#1" />
+            <element signature="e#11246#11959#0" />
+            <element signature="e#12023#14878#0" />
+            <element signature="e#12023#15332#0" />
+            <element signature="e#15174#15308#1" />
+            <element signature="e#15338#16122#0" />
+            <element signature="e#15338#16267#0" />
+            <element signature="e#16273#17054#0" />
+            <element signature="e#17130#19046#0" />
+            <element signature="e#19135#21036#0" />
+            <element signature="e#21237#23317#0" />
+            <element signature="e#21237#24019#0" />
+            <element signature="e#23454#23544#1" />
+            <element signature="e#23550#24013#1" />
+            <element signature="e#23597#23777#1" />
+            <element signature="e#24025#24089#0" />
+            <element signature="e#24159#24654#0" />
+            <element signature="e#24159#24969#0" />
+            <element signature="e#24975#25402#0" />
+            <element signature="e#24975#25620#0" />
+            <element signature="e#25626#26922#0" />
+            <element signature="e#25626#27438#0" />
+            <element signature="e#27444#28750#0" />
+            <element signature="e#27444#29141#0" />
+            <element signature="e#29147#29646#0" />
+            <element signature="e#29147#29963#0" />
+            <element signature="e#29969#30401#0" />
+            <element signature="e#29969#30621#0" />
+            <element signature="e#30627#32243#0" />
+            <element signature="e#30627#32767#0" />
+            <element signature="e#32773#34407#0" />
+            <element signature="e#32773#34804#0" />
+            <element signature="e#34810#35362#0" />
+            <element signature="e#34810#35690#0" />
+            <element signature="e#35696#36196#0" />
+            <element signature="e#35696#36427#0" />
+            <element signature="e#36433#37675#0" />
+            <element signature="e#36433#38217#0" />
+            <element signature="e#38223#39439#0" />
+            <element signature="e#38223#39850#0" />
+            <element signature="e#39856#40237#0" />
+            <element signature="e#39856#41993#0" />
+            <element signature="e#40445#40689#0" />
+            <element signature="e#40699#40918#0" />
+            <element signature="e#41010#41179#0" />
+            <element signature="e#41189#41549#0" />
+            <element signature="e#41369#41513#1" />
+            <element signature="e#41559#41987#0" />
+            <element signature="e#41742#41977#1" />
+            <element signature="e#41865#41946#1" />
+            <element signature="e#41999#42047#0" />
+            <element signature="e#41999#43819#0" />
+            <element signature="e#42259#42507#0" />
+            <element signature="e#42517#42738#0" />
+            <element signature="e#42830#42999#0" />
+            <element signature="e#43009#43371#0" />
+            <element signature="e#43190#43335#1" />
+            <element signature="e#43381#43812#0" />
+            <element signature="e#43565#43802#1" />
+            <element signature="e#43689#43771#1" />
+            <element signature="e#43825#43875#0" />
+            <element signature="e#43825#45676#0" />
+            <element signature="e#44095#44351#0" />
+            <element signature="e#44361#44586#0" />
+            <element signature="e#44678#44847#0" />
+            <element signature="e#44857#45223#0" />
+            <element signature="e#45040#45187#1" />
+            <element signature="e#45233#45670#0" />
+            <element signature="e#45419#45660#1" />
+            <element signature="e#45545#45629#1" />
+            <element signature="e#45682#46017#0" />
+            <element signature="e#46284#46391#0" />
+            <element signature="e#46284#47045#0" />
+            <element signature="e#46580#46622#0" />
+            <element signature="e#47051#47115#0" />
+            <element signature="e#47051#47608#0" />
+            <element signature="initializer##0;class#Random#0" />
+            <element signature="e#47792#47910#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///media/hzx/data/Program/IdeaProjects/MyRBT/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///tmp/output">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/hzx/data/Program/IdeaProjects/MyRBT/src/test/java/rbt/RBTTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#968#998#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/hzx/data/Program/IdeaProjects/MyRBT/src/main/java/rbt/RBT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
+          <folding>
+            <element signature="e#1332#1333#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+            <element signature="e#5397#5398#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
