@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b80c3764-0d83-4901-b787-93dae53af10e" name="Default Changelist" comment="feat(RBT):">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="/media/hzx/data/Program/IdeaProjects/MyRBT/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="/media/hzx/data/Program/IdeaProjects/MyRBT/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="/media/hzx/data/Program/IdeaProjects/MyRBT/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="/media/hzx/data/Program/IdeaProjects/MyRBT/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="/media/hzx/data/Program/IdeaProjects/MyRBT/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="/media/hzx/data/Program/IdeaProjects/MyRBT/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="/media/hzx/data/Program/IdeaProjects/MyRBT/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="/media/hzx/data/Program/IdeaProjects/MyRBT/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="/media/hzx/data/Program/IdeaProjects/MyRBT/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="/media/hzx/data/Program/IdeaProjects/MyRBT/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="/media/hzx/data/Program/IdeaProjects/MyRBT/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="/media/hzx/data/Program/IdeaProjects/MyRBT/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="/media/hzx/data/Program/IdeaProjects/MyRBT/.idea/vcs.xml" beforeDir="false" afterPath="/media/hzx/data/Program/IdeaProjects/MyRBT/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="/media/hzx/data/Program/IdeaProjects/MyRBT/.idea/workspace.xml" beforeDir="false" afterPath="/media/hzx/data/Program/IdeaProjects/MyRBT/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="/media/hzx/data/Program/IdeaProjects/MyRBT/src/main/java/rbt/RBT.java" beforeDir="false" afterPath="/media/hzx/data/Program/IdeaProjects/MyRBT/src/main/java/rbt/RBT.java" afterDir="false" />
-      <change beforePath="/media/hzx/data/Program/IdeaProjects/MyRBT/src/test/java/rbt/RBTTest.java" beforeDir="false" afterPath="/media/hzx/data/Program/IdeaProjects/MyRBT/src/test/java/rbt/RBTTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="b80c3764-0d83-4901-b787-93dae53af10e" name="Default Changelist" comment="feat(RBT):" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="/media/hzx/data/Program/IdeaProjects/MyRBT/.gradle/" />
     <ignored path="/media/hzx/data/Program/IdeaProjects/MyRBT/build/" />
@@ -43,18 +24,102 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file:///media/hzx/data/Program/IdeaProjects/MyRBT/src/main/java/rbt/RBT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+            <state relative-caret-position="416">
+              <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
               <folding>
-                <element signature="e#5551#5552#0" expanded="true" />
-                <element signature="e#9585#9586#0" expanded="true" />
+                <element signature="method#insert#0;class#RBT#0" />
+                <element signature="e#442#533#1" />
+                <element signature="e#578#1249#1" />
+                <element signature="e#632#930#1" />
+                <element signature="e#708#859#1" />
+                <element signature="e#865#916#1" />
+                <element signature="e#936#1239#1" />
+                <element signature="e#1014#1167#1" />
+                <element signature="e#1173#1225#1" />
+                <element signature="method#remove#0;class#RBT#0" />
+                <element signature="e#1434#1529#1" />
+                <element signature="e#1535#2068#1" />
+                <element signature="e#1656#1706#1" />
+                <element signature="e#1855#1901#1" />
+                <element signature="e#1878#1926#1" />
+                <element signature="e#2020#2062#1" />
+                <element signature="method#fixAfterRemove#0;class#RBT#0" />
+                <element signature="e#2148#3793#1" />
+                <element signature="e#2183#2239#1" />
+                <element signature="e#2245#2268#0" />
+                <element signature="e#2256#2303#1" />
+                <element signature="e#2704#2733#0" />
+                <element signature="e#2583#2817#1" />
+                <element signature="e#2638#2737#1" />
+                <element signature="e#2775#2837#1" />
+                <element signature="e#3149#3178#0" />
+                <element signature="e#2927#2982#1" />
+                <element signature="e#3223#3783#1" />
+                <element signature="e#3324#3371#1" />
+                <element signature="e#3859#3888#0" />
+                <element signature="e#3511#3769#1" />
+                <element signature="e#3566#3626#1" />
+                <element signature="e#3703#3765#1" />
+                <element signature="e#4343#4372#0" />
+                <element signature="e#3853#3906#1" />
+                <element signature="docComment;method#successor#0;class#RBT#0" />
+                <element signature="method#successor#0;class#RBT#0" />
+                <element signature="e#1573#1745#1" />
+                <element signature="e#1661#1706#1" />
+                <element signature="e#1751#1895#1" />
+                <element signature="e#1820#1863#1" />
+                <element signature="e#2028#2064#1" />
+                <element signature="method#fixAfterInsert#0;class#RBT#0" />
+                <element signature="e#2123#2144#0" />
+                <element signature="e#2399#3949#1" />
+                <element signature="e#2413#2441#0" />
+                <element signature="e#2664#3298#1" />
+                <element signature="e#2736#2899#1" />
+                <element signature="e#2930#3145#1" />
+                <element signature="e#3151#3284#1" />
+                <element signature="e#3304#3939#1" />
+                <element signature="e#3375#3538#1" />
+                <element signature="e#3568#3787#1" />
+                <element signature="e#3793#3925#1" />
+                <element signature="method#verify#0;class#RBT#0" />
+                <element signature="e#4114#4147#1" />
+                <element signature="e#4192#4333#1" />
+                <element signature="e#4339#4383#1" />
+                <element signature="e#4409#4552#1" />
+                <element signature="e#4558#4603#1" />
+                <element signature="method#rightRotate#0;class#RBT#0" />
+                <element signature="e#4926#4970#1" />
+                <element signature="e#5006#5037#0" />
+                <element signature="method#leftRotate#0;class#RBT#0" />
+                <element signature="e#5403#5446#1" />
+                <element signature="method#transplant#0;class#RBT#0" />
+                <element signature="e#5703#5736#1" />
+                <element signature="e#5742#5897#1" />
+                <element signature="e#5780#5830#1" />
+                <element signature="e#5836#5887#1" />
+                <element signature="e#6053#6093#1" />
                 <element signature="method#layout#0;class#RBT#0" />
-                <element signature="e#7676#7677#0" expanded="true" />
-                <element signature="e#7718#7719#0" expanded="true" />
-                <element signature="e#8388#8389#0" expanded="true" />
-                <element signature="e#8432#8433#0" expanded="true" />
-                <element signature="e#9143#9144#0" expanded="true" />
-                <element signature="e#9185#9186#0" expanded="true" />
+                <element signature="e#6334#7357#1" />
+                <element signature="e#6406#7286#1" />
+                <element signature="e#6482#6675#1" />
+                <element signature="e#6681#6753#1" />
+                <element signature="e#6828#6936#1" />
+                <element signature="e#6942#7011#1" />
+                <element signature="e#7088#7197#1" />
+                <element signature="e#7203#7272#1" />
+                <element signature="class#MyIterator#0;class#RBT#0" />
+                <element signature="method#MyIterator#0;class#MyIterator#0;class#RBT#0" />
+                <element signature="e#7564#7613#1" />
+                <element signature="method#next#0;class#MyIterator#0;class#RBT#0" />
+                <element signature="e#7794#7861#1" />
+                <element signature="e#7957#8106#1" />
+                <element signature="e#8035#8092#1" />
+                <element signature="e#8112#8295#1" />
+                <element signature="e#8186#8245#1" />
+                <element signature="class#Node#0;class#RBT#0" />
+                <element signature="method#Node#0;class#Node#0;class#RBT#0" />
+                <element signature="method#Node#1;class#Node#0;class#RBT#0" />
+                <element signature="method#Node#2;class#Node#0;class#RBT#0" />
               </folding>
             </state>
           </provider>
@@ -63,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file:///media/hzx/data/Program/IdeaProjects/MyRBT/src/test/java/rbt/RBTTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="116" column="4" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
+            <state relative-caret-position="476">
+              <caret line="79" column="37" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
               <folding>
                 <element signature="e#968#998#1" expanded="true" />
                 <element signature="e#2281#2311#1" expanded="true" />
@@ -103,8 +168,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="/media/hzx/data/Program/IdeaProjects/MyRBT/src/test/java/rbt/RBTTest.java" />
         <option value="/media/hzx/data/Program/IdeaProjects/MyRBT/src/main/java/rbt/RBT.java" />
+        <option value="/media/hzx/data/Program/IdeaProjects/MyRBT/src/test/java/rbt/RBTTest.java" />
       </list>
     </option>
   </component>
@@ -263,7 +328,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554423537424</updated>
-      <workItem from="1554423541158" duration="40869000" />
+      <workItem from="1554423541158" duration="41196000" />
     </task>
     <task id="LOCAL-00001" summary="feat(RBT):">
       <created>1554443781765</created>
@@ -276,15 +341,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RBTTest_test2 - 2019.04.05 at 22h 53m 40s.xml">
-      <configuration name="RBTTest.test2" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="RBTTest_test2 - 2019.04.05 at 22h 54m 12s.xml">
-      <configuration name="RBTTest.test2" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="RBTTest_test2 - 2019.04.05 at 22h 55m 00s.xml">
-      <configuration name="RBTTest.test2" configurationId="AndroidJUnit" />
-    </history-entry>
     <history-entry file="RBTTest_test2 - 2019.04.05 at 22h 57m 56s.xml">
       <configuration name="RBTTest.test2" configurationId="AndroidJUnit" />
     </history-entry>
@@ -306,9 +362,18 @@
     <history-entry file="RBTTest_test2 - 2019.04.05 at 23h 08m 06s.xml">
       <configuration name="RBTTest.test2" configurationId="AndroidJUnit" />
     </history-entry>
+    <history-entry file="RBTTest_test2 - 2019.04.05 at 23h 13m 12s.xml">
+      <configuration name="RBTTest.test2" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_test2 - 2019.04.05 at 23h 13m 25s.xml">
+      <configuration name="RBTTest.test2" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="RBTTest_test2 - 2019.04.05 at 23h 14m 01s.xml">
+      <configuration name="RBTTest.test2" configurationId="AndroidJUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40869000" />
+    <option name="totallyTimeSpent" value="41196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
@@ -328,7 +393,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Tail" />
       <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32912722" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -355,7 +420,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(RBT):" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(RBT):" />
+    <MESSAGE value="feat(RBT): finish all work" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(RBT): finish all work" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -953,8 +1019,8 @@
     </entry>
     <entry file="file:///media/hzx/data/Program/IdeaProjects/MyRBT/src/test/java/rbt/RBTTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="116" column="4" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
+        <state relative-caret-position="476">
+          <caret line="79" column="37" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
           <folding>
             <element signature="e#968#998#1" expanded="true" />
             <element signature="e#2281#2311#1" expanded="true" />
@@ -964,18 +1030,102 @@
     </entry>
     <entry file="file:///media/hzx/data/Program/IdeaProjects/MyRBT/src/main/java/rbt/RBT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+        <state relative-caret-position="416">
+          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
           <folding>
-            <element signature="e#5551#5552#0" expanded="true" />
-            <element signature="e#9585#9586#0" expanded="true" />
+            <element signature="method#insert#0;class#RBT#0" />
+            <element signature="e#442#533#1" />
+            <element signature="e#578#1249#1" />
+            <element signature="e#632#930#1" />
+            <element signature="e#708#859#1" />
+            <element signature="e#865#916#1" />
+            <element signature="e#936#1239#1" />
+            <element signature="e#1014#1167#1" />
+            <element signature="e#1173#1225#1" />
+            <element signature="method#remove#0;class#RBT#0" />
+            <element signature="e#1434#1529#1" />
+            <element signature="e#1535#2068#1" />
+            <element signature="e#1656#1706#1" />
+            <element signature="e#1855#1901#1" />
+            <element signature="e#1878#1926#1" />
+            <element signature="e#2020#2062#1" />
+            <element signature="method#fixAfterRemove#0;class#RBT#0" />
+            <element signature="e#2148#3793#1" />
+            <element signature="e#2183#2239#1" />
+            <element signature="e#2245#2268#0" />
+            <element signature="e#2256#2303#1" />
+            <element signature="e#2704#2733#0" />
+            <element signature="e#2583#2817#1" />
+            <element signature="e#2638#2737#1" />
+            <element signature="e#2775#2837#1" />
+            <element signature="e#3149#3178#0" />
+            <element signature="e#2927#2982#1" />
+            <element signature="e#3223#3783#1" />
+            <element signature="e#3324#3371#1" />
+            <element signature="e#3859#3888#0" />
+            <element signature="e#3511#3769#1" />
+            <element signature="e#3566#3626#1" />
+            <element signature="e#3703#3765#1" />
+            <element signature="e#4343#4372#0" />
+            <element signature="e#3853#3906#1" />
+            <element signature="docComment;method#successor#0;class#RBT#0" />
+            <element signature="method#successor#0;class#RBT#0" />
+            <element signature="e#1573#1745#1" />
+            <element signature="e#1661#1706#1" />
+            <element signature="e#1751#1895#1" />
+            <element signature="e#1820#1863#1" />
+            <element signature="e#2028#2064#1" />
+            <element signature="method#fixAfterInsert#0;class#RBT#0" />
+            <element signature="e#2123#2144#0" />
+            <element signature="e#2399#3949#1" />
+            <element signature="e#2413#2441#0" />
+            <element signature="e#2664#3298#1" />
+            <element signature="e#2736#2899#1" />
+            <element signature="e#2930#3145#1" />
+            <element signature="e#3151#3284#1" />
+            <element signature="e#3304#3939#1" />
+            <element signature="e#3375#3538#1" />
+            <element signature="e#3568#3787#1" />
+            <element signature="e#3793#3925#1" />
+            <element signature="method#verify#0;class#RBT#0" />
+            <element signature="e#4114#4147#1" />
+            <element signature="e#4192#4333#1" />
+            <element signature="e#4339#4383#1" />
+            <element signature="e#4409#4552#1" />
+            <element signature="e#4558#4603#1" />
+            <element signature="method#rightRotate#0;class#RBT#0" />
+            <element signature="e#4926#4970#1" />
+            <element signature="e#5006#5037#0" />
+            <element signature="method#leftRotate#0;class#RBT#0" />
+            <element signature="e#5403#5446#1" />
+            <element signature="method#transplant#0;class#RBT#0" />
+            <element signature="e#5703#5736#1" />
+            <element signature="e#5742#5897#1" />
+            <element signature="e#5780#5830#1" />
+            <element signature="e#5836#5887#1" />
+            <element signature="e#6053#6093#1" />
             <element signature="method#layout#0;class#RBT#0" />
-            <element signature="e#7676#7677#0" expanded="true" />
-            <element signature="e#7718#7719#0" expanded="true" />
-            <element signature="e#8388#8389#0" expanded="true" />
-            <element signature="e#8432#8433#0" expanded="true" />
-            <element signature="e#9143#9144#0" expanded="true" />
-            <element signature="e#9185#9186#0" expanded="true" />
+            <element signature="e#6334#7357#1" />
+            <element signature="e#6406#7286#1" />
+            <element signature="e#6482#6675#1" />
+            <element signature="e#6681#6753#1" />
+            <element signature="e#6828#6936#1" />
+            <element signature="e#6942#7011#1" />
+            <element signature="e#7088#7197#1" />
+            <element signature="e#7203#7272#1" />
+            <element signature="class#MyIterator#0;class#RBT#0" />
+            <element signature="method#MyIterator#0;class#MyIterator#0;class#RBT#0" />
+            <element signature="e#7564#7613#1" />
+            <element signature="method#next#0;class#MyIterator#0;class#RBT#0" />
+            <element signature="e#7794#7861#1" />
+            <element signature="e#7957#8106#1" />
+            <element signature="e#8035#8092#1" />
+            <element signature="e#8112#8295#1" />
+            <element signature="e#8186#8245#1" />
+            <element signature="class#Node#0;class#RBT#0" />
+            <element signature="method#Node#0;class#Node#0;class#RBT#0" />
+            <element signature="method#Node#1;class#Node#0;class#RBT#0" />
+            <element signature="method#Node#2;class#Node#0;class#RBT#0" />
           </folding>
         </state>
       </provider>
