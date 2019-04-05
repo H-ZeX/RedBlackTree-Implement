@@ -62,7 +62,7 @@ public class RBTTest {
 
     @Test
     public void test2() {
-        final int testCnt = 10240;
+        final int testCnt = 1024;
         final int maxSize = 1024;
         final int minSize = 10;
         for (int i = 0; i < testCnt; i++) {
