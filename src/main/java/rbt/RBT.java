@@ -355,17 +355,20 @@ public class RBT<T> implements Iterable<T> {
     }
 
     private class MyIterator implements Iterator<T> {
-        private Node next = root;
+        private Node next = nil;
         private Node cur = nil;
 
         MyIterator() {
-            while (next.left != nil) {
-                next = next.left;
+            Node n = root;
+            while (n != nil) {
+                next = n;
+                n = n.left;
             }
         }
 
         @Override
         public boolean hasNext() {
+            assert next != null;
             return next != nil;
         }
 
@@ -374,25 +377,37 @@ public class RBT<T> implements Iterable<T> {
             if (next == nil) {
                 throw new NoSuchElementException();
             }
-            Node current = next;
-            cur = current;
-            if (next.right != nil) {
-                next = next.right;
-                while (next.left != nil) {
-                    next = next.left;
+            cur = next;
+            next = next(next);
+            return cur.value;
+        }
+
+        /**
+         * @return nil if no next
+         */
+        private Node next(Node n) {
+            assert n != nil;
+            if (n.right != nil) {
+                n = n.right;
+                while (n.left != nil) {
+                    n = n.left;
                 }
             } else {
-                while (next.parent != nil && next.parent.right == next) {
-                    next = next.parent;
+                while (n.parent != nil && n.parent.right == n) {
+                    n = n.parent;
                 }
-                next = next.parent;
+                n = n.parent;
             }
-            return current.value;
+            return n;
         }
 
         @Override
         public void remove() {
+            if (cur == nil) {
+                throw new IllegalStateException();
+            }
             RBT.this.remove(cur);
+            cur = nil;
         }
     }
 
