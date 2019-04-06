@@ -1,5 +1,5 @@
 # RedBlackTree-Implement
 
 - Implement accroding to CLRS 3rd.
-- In the end of `insert` and `remove`, use `verify` to check the five rules.
-- Because the check's complexity is O(n), so the test will run very slow. Remove the `verify` if u want to use it.
+- In the test, call `verify` after RBT's `insert` and iterator's `remove` to check the five rules.
+- Because the `verify`'s complexity is O(n), so the test is not fast.
