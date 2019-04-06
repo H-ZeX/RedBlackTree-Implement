@@ -52,9 +52,7 @@ public class RBTTest {
                     for (T x : data) {
                         rbt.insert(x);
                         tree.add(new Container(x, id));
-                        ArrayList<Long> list = map.get(x);
-                        list.add(id);
-                        map.put(x, list);
+                        map.get(x).add(id);
                         id++;
                         addList.add(x);
                         delList.add(null);
@@ -73,8 +71,7 @@ public class RBTTest {
                         T x = it.next();
                         if (random.nextBoolean()) {
                             ArrayList<Long> list = map.get(x);
-                            long t = list.get(list.size() - 1);
-                            list.remove(list.size() - 1);
+                            long t = list.remove(list.size() - 1);
                             tree.remove(new Container(x, t));
                             it.remove();
                             delList.add(x);
