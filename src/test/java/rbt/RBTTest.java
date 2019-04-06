@@ -51,6 +51,8 @@ public class RBTTest {
                 for (int j = 0; j < roundCnt; j++) {
                     for (T x : data) {
                         rbt.insert(x);
+                        rbt.verify();
+
                         tree.add(new Container(x, id));
                         map.get(x).add(id);
                         id++;
@@ -70,10 +72,12 @@ public class RBTTest {
                     while (it.hasNext()) {
                         T x = it.next();
                         if (random.nextBoolean()) {
+                            it.remove();
+                            rbt.verify();
+
                             ArrayList<Long> list = map.get(x);
                             long t = list.remove(list.size() - 1);
                             tree.remove(new Container(x, t));
-                            it.remove();
                             delList.add(x);
                             addList.add(null);
                         }

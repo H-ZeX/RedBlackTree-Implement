@@ -42,8 +42,6 @@ public class RBT<T> implements Iterable<T> {
                 }
             }
         }
-        // TODO, just for test
-        verify(root);
     }
 
     @Override
@@ -82,8 +80,6 @@ public class RBT<T> implements Iterable<T> {
         if (!yoc) {
             fixAfterRemove(x);
         }
-        // TODO, just for test
-        verify(root);
     }
 
     private void fixAfterRemove(Node x) {
@@ -275,7 +271,17 @@ public class RBT<T> implements Iterable<T> {
         n2.parent = n1.parent;
     }
 
+    /**
+     * @return the black high
+     */
+    public int verify() {
+        return verify(root);
+    }
+
     // TODO, just for test
+    /**
+     * @return return the black high
+     */
     private int verify(Node n) {
         assert n != null;
         assert !n.red;
@@ -306,11 +312,6 @@ public class RBT<T> implements Iterable<T> {
         }
         assert lh == rh : lh + " " + rh;
         return lh + 1;
-    }
-
-    // TODO, just for test
-    public int blackHigh() {
-        return verify(root);
     }
 
     // TODO, just for test
