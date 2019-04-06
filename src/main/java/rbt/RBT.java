@@ -46,6 +46,11 @@ public class RBT<T> implements Iterable<T> {
         verify(root);
     }
 
+    @Override
+    public Iterator<T> iterator() {
+        return new MyIterator();
+    }
+
     private void remove(Node z) {
         assert z != nil;
         Node x;
@@ -162,11 +167,6 @@ public class RBT<T> implements Iterable<T> {
         }
     }
 
-    // TODO, just for test
-    public int blackHigh() {
-        return verify(root);
-    }
-
     private void fixAfterInsert(Node n) {
         assert n != null;
         assert n != nil;
@@ -222,39 +222,6 @@ public class RBT<T> implements Iterable<T> {
         root.red = false;
     }
 
-    // TODO, just for test
-    private int verify(Node n) {
-        assert n != null;
-        assert !n.red;
-
-        assert !nil.red;
-        assert nil.left == null;
-        assert nil.right == null;
-
-        if (n == nil) {
-            return 1;
-        }
-        int lh, rh;
-        if (n.left.red) {
-            int a = verify(n.left.left);
-            int b = verify(n.left.right);
-            assert a == b;
-            lh = a;
-        } else {
-            lh = verify(n.left);
-        }
-        if (n.right.red) {
-            int a = verify(n.right.left);
-            int b = verify(n.right.right);
-            assert a == b;
-            rh = a;
-        } else {
-            rh = verify(n.right);
-        }
-        assert lh == rh : lh + " " + rh;
-        return lh + 1;
-    }
-
     private void rightRotate(Node n) {
         assert n != null;
         assert n != nil;
@@ -308,11 +275,45 @@ public class RBT<T> implements Iterable<T> {
         n2.parent = n1.parent;
     }
 
-    @Override
-    public Iterator<T> iterator() {
-        return new MyIterator();
+    // TODO, just for test
+    private int verify(Node n) {
+        assert n != null;
+        assert !n.red;
+
+        assert !nil.red;
+        assert nil.left == null;
+        assert nil.right == null;
+
+        if (n == nil) {
+            return 1;
+        }
+        int lh, rh;
+        if (n.left.red) {
+            int a = verify(n.left.left);
+            int b = verify(n.left.right);
+            assert a == b;
+            lh = a;
+        } else {
+            lh = verify(n.left);
+        }
+        if (n.right.red) {
+            int a = verify(n.right.left);
+            int b = verify(n.right.right);
+            assert a == b;
+            rh = a;
+        } else {
+            rh = verify(n.right);
+        }
+        assert lh == rh : lh + " " + rh;
+        return lh + 1;
     }
 
+    // TODO, just for test
+    public int blackHigh() {
+        return verify(root);
+    }
+
+    // TODO, just for test
     public void layout() {
         @SuppressWarnings("unchecked")
         LinkedList<Node>[] lists = (LinkedList<Node>[]) new LinkedList[2];
